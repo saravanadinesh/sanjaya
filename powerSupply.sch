@@ -1,0 +1,252 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 7
+Title "Power Supply"
+Date "2018-09-25"
+Rev "0.1"
+Comp "Bodhileaf Technologies"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 1600 1800 0    50   Input ~ 0
+V_adapter_out
+$Comp
+L Device:Q_PMOS_GSD Q?
+U 1 1 5BAA5E31
+P 2500 1900
+F 0 "Q?" V 2843 1900 50  0000 C CNN
+F 1 "Q_PMOS_GSD" V 2752 1900 50  0000 C CNN
+F 2 "" H 2700 2000 50  0001 C CNN
+F 3 "~" H 2500 1900 50  0001 C CNN
+	1    2500 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Zener_Small D?
+U 1 1 5BAA62D5
+P 2950 2000
+F 0 "D?" V 2904 2068 50  0000 L CNN
+F 1 "10V" V 2995 2068 50  0000 L CNN
+F 2 "" V 2950 2000 50  0001 C CNN
+F 3 "~" V 2950 2000 50  0001 C CNN
+	1    2950 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Fuse F?
+U 1 1 5BAA63D1
+P 1950 1800
+F 0 "F?" V 1753 1800 50  0000 C CNN
+F 1 "3A" V 1844 1800 50  0000 C CNN
+F 2 "" V 1880 1800 50  0001 C CNN
+F 3 "~" H 1950 1800 50  0001 C CNN
+	1    1950 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5BAA651A
+P 2500 2800
+F 0 "R?" H 2559 2846 50  0000 L CNN
+F 1 "10K" H 2559 2755 50  0000 L CNN
+F 2 "" H 2500 2800 50  0001 C CNN
+F 3 "~" H 2500 2800 50  0001 C CNN
+	1    2500 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener D?
+U 1 1 5BAA66A0
+P 3400 2050
+F 0 "D?" V 3354 2129 50  0000 L CNN
+F 1 "24V" V 3445 2129 50  0000 L CNN
+F 2 "" H 3400 2050 50  0001 C CNN
+F 3 "~" H 3400 2050 50  0001 C CNN
+	1    3400 2050
+	0    1    1    0   
+$EndComp
+Text HLabel 1600 3600 0    50   Input ~ 0
+Gnd_In
+Wire Wire Line
+	2100 1800 2200 1800
+Wire Wire Line
+	2500 2100 2500 2250
+$Comp
+L Custom_Discrete:FDC021N30 Q?
+U 1 1 5BAB38D4
+P 5400 2150
+F 0 "Q?" V 5421 1822 50  0000 R CNN
+F 1 "FDC021N30" V 5330 1822 50  0000 R CNN
+F 2 "" H 5400 1850 50  0001 C CNN
+F 3 "https://www.mouser.in/datasheet/2/308/FDC021N30-1119132.pdf" H 5400 1850 50  0001 C CNN
+	1    5400 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Custom_ICs:TPS2400BVR U?
+U 1 1 5BAB3A2A
+P 4450 3150
+F 0 "U?" H 4878 3196 50  0000 L CNN
+F 1 "TPS2400BVR" H 4878 3105 50  0000 L CNN
+F 2 "" H 4450 3150 50  0001 C CNN
+F 3 "" H 4450 3150 50  0001 C CNN
+	1    4450 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3600 4450 3500
+Wire Wire Line
+	2950 2100 2950 2250
+Wire Wire Line
+	2950 2250 2500 2250
+Connection ~ 2500 2250
+Wire Wire Line
+	2700 1800 2950 1800
+Wire Wire Line
+	2950 1900 2950 1800
+Connection ~ 2950 1800
+Wire Wire Line
+	2950 1800 3400 1800
+Wire Wire Line
+	3400 1900 3400 1800
+Connection ~ 3400 1800
+Wire Wire Line
+	3400 1800 4200 1800
+Wire Wire Line
+	3400 2200 3400 3600
+Connection ~ 3400 3600
+Wire Wire Line
+	3400 3600 4450 3600
+Wire Wire Line
+	4200 2800 4200 1800
+Connection ~ 4200 1800
+Wire Wire Line
+	4200 1800 5200 1800
+Wire Wire Line
+	4700 2800 4700 2650
+Wire Wire Line
+	4700 2650 5600 2650
+Wire Wire Line
+	5600 2650 5600 2550
+Wire Wire Line
+	5200 2550 5400 2550
+Wire Wire Line
+	5400 1800 5200 1800
+Connection ~ 5200 1800
+Text HLabel 9000 1800 2    50   Output ~ 0
+V_supply_out
+Wire Wire Line
+	5600 1800 6500 1800
+Wire Wire Line
+	1600 3600 2500 3600
+Wire Wire Line
+	2500 2250 2500 2700
+Wire Wire Line
+	2500 2900 2500 3600
+Connection ~ 2500 3600
+Wire Wire Line
+	2500 3600 3400 3600
+Wire Wire Line
+	6500 1400 6500 1800
+Connection ~ 6500 1800
+$Comp
+L Connector:USB_A J?
+U 1 1 5BAB59BB
+P 7100 2650
+F 0 "J?" H 7155 3117 50  0000 C CNN
+F 1 "USB_A" H 7155 3026 50  0000 C CNN
+F 2 "" H 7250 2600 50  0001 C CNN
+F 3 " ~" H 7250 2600 50  0001 C CNN
+	1    7100 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Micro J?
+U 1 1 5BAB5AB1
+P 8100 2650
+F 0 "J?" H 8155 3117 50  0000 C CNN
+F 1 "USB_B_Micro" H 8155 3026 50  0000 C CNN
+F 2 "" H 8250 2600 50  0001 C CNN
+F 3 "~" H 8250 2600 50  0001 C CNN
+	1    8100 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 1800 1800 1800
+Wire Wire Line
+	2200 1800 2200 1400
+Connection ~ 2200 1800
+Wire Wire Line
+	2200 1800 2300 1800
+NoConn ~ 7000 3050
+NoConn ~ 8000 3050
+Wire Wire Line
+	7500 1800 7500 2450
+Wire Wire Line
+	7500 2450 7400 2450
+Wire Wire Line
+	6500 1800 7500 1800
+Wire Wire Line
+	4450 3600 7100 3600
+Wire Wire Line
+	7100 3600 7100 3050
+Connection ~ 4450 3600
+Text HLabel 9000 3600 2    50   Output ~ 0
+Gnd_Out
+Wire Wire Line
+	8100 3050 8100 3600
+Wire Wire Line
+	8100 3600 9000 3600
+NoConn ~ 7400 2650
+NoConn ~ 7400 2750
+NoConn ~ 8400 2650
+NoConn ~ 8400 2750
+NoConn ~ 8400 2850
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5BABDE81
+P 8900 2200
+F 0 "J?" H 8872 2080 50  0000 R CNN
+F 1 "ON_Switch" H 8872 2171 50  0000 R CNN
+F 2 "" H 8900 2200 50  0001 C CNN
+F 3 "~" H 8900 2200 50  0001 C CNN
+	1    8900 2200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8400 2450 8600 2450
+Wire Wire Line
+	8600 2450 8600 2200
+Wire Wire Line
+	8600 2200 8700 2200
+Wire Wire Line
+	8700 2100 8600 2100
+Wire Wire Line
+	8600 2100 8600 1800
+Wire Wire Line
+	8600 1800 9000 1800
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5BABF2C4
+P 3450 1000
+F 0 "J?" V 3510 1040 50  0000 L CNN
+F 1 "Supply_Safety_Bypass" V 3601 1040 50  0000 L CNN
+F 2 "" H 3450 1000 50  0001 C CNN
+F 3 "~" H 3450 1000 50  0001 C CNN
+	1    3450 1000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3350 1400 3350 1200
+Wire Wire Line
+	2200 1400 3350 1400
+Wire Wire Line
+	3450 1400 3450 1200
+Wire Wire Line
+	3450 1400 6500 1400
+$EndSCHEMATC
