@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:sanjaya-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -19,11 +20,9 @@ U 5BAA5554
 F0 "powerSupply" 50
 F1 "powerSupply.sch" 50
 F2 "V_adapter_out" I L 1050 1400 50 
-F3 "V_supply_out" O R 2400 1600 50 
-F4 "Supply_bypass_1" U R 2400 1400 50 
-F5 "Supply_bypass_2" U R 2400 1300 50 
-F6 "Gnd_In" B L 1050 1700 50 
-F7 "Gnd_Out" O R 2400 1800 50 
+F3 "V_supply_out" O R 2400 1400 50 
+F4 "Gnd_In" B L 1050 1700 50 
+F5 "Gnd_Out" O R 2400 1700 50 
 $EndSheet
 $Sheet
 S 3900 1150 2200 1950
@@ -50,9 +49,17 @@ F0 "digitalSensing" 50
 F1 "digitalSensing.sch" 50
 $EndSheet
 $Sheet
-S 4050 4250 2350 1400
+S 4050 4250 1100 700 
 U 5BAA565C
 F0 "serial" 50
 F1 "serial.sch" 50
+F2 "GND" I L 4050 4800 50 
+F3 "VCC" I L 4050 4350 50 
+F4 "UART_TX" I L 4050 4500 50 
+F5 "UART_RX" I L 4050 4650 50 
+F6 "RS485_A+" I R 5150 4650 50 
+F7 "RS485_B-" I R 5150 4800 50 
+F8 "RS232_TX" I R 5150 4350 50 
+F9 "RS232_RX" I R 5150 4500 50 
 $EndSheet
 $EndSCHEMATC

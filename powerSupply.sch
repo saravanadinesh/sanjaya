@@ -1,12 +1,13 @@
 EESchema Schematic File Version 4
+LIBS:sanjaya-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 7
 Title "Power Supply"
-Date "2018-09-25"
-Rev "0.1"
+Date "2018-09-29"
+Rev "0.2"
 Comp "Bodhileaf Technologies"
 Comment1 ""
 Comment2 ""
@@ -249,4 +250,21 @@ Wire Wire Line
 	3450 1400 3450 1200
 Wire Wire Line
 	3450 1400 6500 1400
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5BAE59DD
+P 7550 3800
+F 0 "J?" V 7703 3612 50  0000 R CNN
+F 1 "Battery_Backup_Bypass" V 7612 3612 50  0000 R CNN
+F 2 "" H 7550 3800 50  0001 C CNN
+F 3 "~" H 7550 3800 50  0001 C CNN
+	1    7550 3800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7100 3600 7550 3600
+Connection ~ 7100 3600
+Wire Wire Line
+	7650 3600 8100 3600
+Connection ~ 8100 3600
 $EndSCHEMATC

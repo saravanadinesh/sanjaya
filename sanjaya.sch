@@ -1,12 +1,13 @@
 EESchema Schematic File Version 4
+LIBS:sanjaya-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 7
 Title "Sanjaya Gateway"
-Date "2018-09-25"
-Rev "0.1"
+Date "2018-09-29"
+Rev "0.2"
 Comp "Bodhileaf Technologies"
 Comment1 ""
 Comment2 ""
@@ -48,9 +49,17 @@ F0 "digitalSensing" 50
 F1 "digitalSensing.sch" 50
 $EndSheet
 $Sheet
-S 4050 4250 2350 1400
+S 4050 4250 1100 700 
 U 5BAA565C
 F0 "serial" 50
 F1 "serial.sch" 50
+F2 "GND" I L 4050 4800 50 
+F3 "VCC" I L 4050 4350 50 
+F4 "UART_TX" I L 4050 4500 50 
+F5 "UART_RX" I L 4050 4650 50 
+F6 "RS485_A+" I R 5150 4650 50 
+F7 "RS485_B-" I R 5150 4800 50 
+F8 "RS232_TX" I R 5150 4350 50 
+F9 "RS232_RX" I R 5150 4500 50 
 $EndSheet
 $EndSCHEMATC
