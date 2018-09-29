@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 7 7
 Title ""
 Date "2018-09-29"
-Rev "0.2"
+Rev "0.3"
 Comp "Bodhileaf Technologies"
 Comment1 ""
 Comment2 ""
@@ -92,17 +92,17 @@ Wire Wire Line
 Connection ~ 5200 5050
 Wire Wire Line
 	5200 5050 5550 5050
-Text HLabel 4500 5750 0    50   Input ~ 0
+Text HLabel 4500 5750 0    50   BiDi ~ 0
 GND
 Text HLabel 4700 650  0    50   Input ~ 0
 VCC
 Text HLabel 1650 3700 0    50   Input ~ 0
 UART_TX
-Text HLabel 1650 3900 0    50   Input ~ 0
+Text HLabel 1650 3900 0    50   Output ~ 0
 UART_RX
-Text HLabel 8950 4400 2    50   Input ~ 0
+Text HLabel 8950 4400 2    50   BiDi ~ 0
 RS485_A+
-Text HLabel 8950 3900 2    50   Input ~ 0
+Text HLabel 8950 3900 2    50   BiDi ~ 0
 RS485_B-
 Wire Wire Line
 	3650 4200 4900 4200
@@ -165,7 +165,7 @@ Wire Wire Line
 	4500 5750 4900 5750
 Wire Wire Line
 	4900 5750 4900 5550
-Text HLabel 6550 4900 0    50   Input ~ 0
+Text HLabel 6550 4900 0    50   BiDi ~ 0
 GND
 Wire Wire Line
 	6150 5050 6250 5050
@@ -178,7 +178,7 @@ Wire Wire Line
 Connection ~ 6250 4100
 Wire Wire Line
 	6250 4100 6250 3800
-Text HLabel 6600 2250 2    50   Input ~ 0
+Text HLabel 6600 2250 2    50   Output ~ 0
 RS232_TX
 Text HLabel 6600 2650 2    50   Input ~ 0
 RS232_RX
@@ -394,7 +394,7 @@ Wire Wire Line
 Connection ~ 8450 4400
 Wire Wire Line
 	8450 4400 8600 4400
-Text HLabel 5000 3500 0    50   Input ~ 0
+Text HLabel 5000 3500 0    50   BiDi ~ 0
 GND
 Wire Wire Line
 	5000 3500 5100 3500
@@ -477,7 +477,7 @@ Wire Wire Line
 	5900 2050 5900 1900
 Wire Wire Line
 	5900 1900 6000 1900
-Text HLabel 6600 2100 2    50   Input ~ 0
+Text HLabel 6600 2100 2    50   BiDi ~ 0
 GND
 Wire Wire Line
 	6350 1950 6350 2100
@@ -507,7 +507,7 @@ Wire Wire Line
 Wire Wire Line
 	5900 650  5900 750 
 Connection ~ 5100 650 
-Text HLabel 6200 1100 2    50   Input ~ 0
+Text HLabel 6200 1100 2    50   BiDi ~ 0
 GND
 Wire Wire Line
 	5900 950  5900 1100

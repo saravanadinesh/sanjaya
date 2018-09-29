@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 7
 Title "Sanjaya Gateway"
-Date "2018-09-25"
-Rev "0.1"
+Date "2018-09-29"
+Rev "0.2"
 Comp "Bodhileaf Technologies"
 Comment1 ""
 Comment2 ""
@@ -43,23 +43,34 @@ F0 "analogSensing" 50
 F1 "analogSensing.sch" 50
 $EndSheet
 $Sheet
-S 8500 3600 850  1600
+S 8400 3650 850  1150
 U 5BAA5631
 F0 "digitalSensing" 50
 F1 "digitalSensing.sch" 50
+F2 "Vin_1" I L 8400 3950 50 
+F3 "Gnd_in" B L 8400 4600 50 
+F4 "Vin_2" I L 8400 4100 50 
+F5 "Vin_3" I L 8400 4250 50 
+F6 "Vin_4" I L 8400 4400 50 
+F7 "Gnd_out" B R 9250 4600 50 
+F8 "Vcc" I R 9250 3750 50 
+F9 "Vout_1" O R 9250 3950 50 
+F10 "Vout_2" O R 9250 4100 50 
+F11 "Vout_3" O R 9250 4250 50 
+F12 "Vout_4" O R 9250 4400 50 
 $EndSheet
 $Sheet
 S 4050 4250 1100 700 
 U 5BAA565C
 F0 "serial" 50
 F1 "serial.sch" 50
-F2 "GND" I L 4050 4800 50 
-F3 "VCC" I L 4050 4350 50 
-F4 "UART_TX" I L 4050 4500 50 
-F5 "UART_RX" I L 4050 4650 50 
-F6 "RS485_A+" I R 5150 4650 50 
-F7 "RS485_B-" I R 5150 4800 50 
-F8 "RS232_TX" I R 5150 4350 50 
+F2 "VCC" I L 4050 4350 50 
+F3 "UART_TX" I L 4050 4500 50 
+F4 "GND" B L 4050 4800 50 
+F5 "UART_RX" O L 4050 4650 50 
+F6 "RS485_A+" B R 5150 4650 50 
+F7 "RS485_B-" B R 5150 4800 50 
+F8 "RS232_TX" O R 5150 4350 50 
 F9 "RS232_RX" I R 5150 4500 50 
 $EndSheet
 $EndSCHEMATC
