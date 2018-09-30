@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 7
 Title "Sanjaya Gateway"
 Date "2018-09-29"
-Rev "0.2"
+Rev "0.3"
 Comp "Bodhileaf Technologies"
 Comment1 ""
 Comment2 ""
@@ -31,10 +31,21 @@ F0 "rPi" 50
 F1 "rPi.sch" 50
 $EndSheet
 $Sheet
-S 7450 1100 1700 700 
+S 7450 1100 1150 850 
 U 5BAA55AD
 F0 "actuation" 50
 F1 "actuation.sch" 50
+F2 "V_Coil" I L 7450 1200 50 
+F3 "Gnd" B L 7450 1800 50 
+F4 "Relay1_Ctrl" I L 7450 1350 50 
+F5 "Fan_Ctrl" I L 7450 1500 50 
+F6 "Relay2_Ctrl" I L 7450 1650 50 
+F7 "RL1_NO" B R 8600 1400 50 
+F8 "RL1_NC" B R 8600 1200 50 
+F9 "RL1_C" B R 8600 1300 50 
+F10 "RL2_C" B R 8600 1700 50 
+F11 "RL2_NC" B R 8600 1600 50 
+F12 "RL2_NO" B R 8600 1800 50 
 $EndSheet
 $Sheet
 S 7500 2350 1700 750 
