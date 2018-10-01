@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 7
 Title "Sanjaya Gateway"
-Date "2018-09-29"
-Rev "0.3"
+Date "2018-10-01"
+Rev "0.4"
 Comp "Bodhileaf Technologies"
 Comment1 ""
 Comment2 ""
@@ -48,27 +48,38 @@ F11 "RL2_NC" B R 8600 1600 50
 F12 "RL2_NO" B R 8600 1800 50 
 $EndSheet
 $Sheet
-S 7500 2350 1700 750 
+S 7500 2350 1050 1500
 U 5BAA5602
 F0 "analogSensing" 50
 F1 "analogSensing.sch" 50
+F2 "Vcc" I L 7500 2500 50 
+F3 "Gnd" I L 7500 3650 50 
+F4 "SCL" B L 7500 2650 50 
+F5 "SDA" B L 7500 2800 50 
+F6 "V_Sense" I R 8550 2500 50 
+F7 "I_Sense+" I R 8550 2700 50 
+F8 "I_Sense-" I R 8550 2850 50 
+F9 "R_Sense" I R 8550 3100 50 
+F10 "T_Sense" I R 8550 3250 50 
+F11 "420+" I R 8550 3500 50 
+F12 "420-" I R 8550 3650 50 
 $EndSheet
 $Sheet
-S 8400 3650 850  1150
+S 6500 4550 850  1150
 U 5BAA5631
 F0 "digitalSensing" 50
 F1 "digitalSensing.sch" 50
-F2 "Vin_1" I L 8400 3950 50 
-F3 "Gnd_in" B L 8400 4600 50 
-F4 "Vin_2" I L 8400 4100 50 
-F5 "Vin_3" I L 8400 4250 50 
-F6 "Vin_4" I L 8400 4400 50 
-F7 "Gnd_out" B R 9250 4600 50 
-F8 "Vcc" I R 9250 3750 50 
-F9 "Vout_1" O R 9250 3950 50 
-F10 "Vout_2" O R 9250 4100 50 
-F11 "Vout_3" O R 9250 4250 50 
-F12 "Vout_4" O R 9250 4400 50 
+F2 "Vin_1" I R 7350 4850 50 
+F3 "Gnd_in" B R 7350 5500 50 
+F4 "Vin_2" I R 7350 5000 50 
+F5 "Vin_3" I R 7350 5150 50 
+F6 "Vin_4" I R 7350 5300 50 
+F7 "Gnd_out" B L 6500 5500 50 
+F8 "Vcc" I L 6500 4650 50 
+F9 "Vout_1" O L 6500 4850 50 
+F10 "Vout_2" O L 6500 5000 50 
+F11 "Vout_3" O L 6500 5150 50 
+F12 "Vout_4" O L 6500 5300 50 
 $EndSheet
 $Sheet
 S 4050 4250 1100 700 
