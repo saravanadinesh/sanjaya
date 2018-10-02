@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 7
 Title "Sanjaya Gateway"
-Date "2018-10-01"
-Rev "0.5"
+Date "2018-10-02"
+Rev "0.6"
 Comp "Bodhileaf Technologies"
 Comment1 ""
 Comment2 ""
@@ -79,21 +79,21 @@ F10 "420+" I R 8600 4950 50
 F11 "420-" I R 8600 5050 50 
 $EndSheet
 $Sheet
-S 5550 5000 850  1150
+S 5550 5200 850  1150
 U 5BAA5631
 F0 "digitalSensing" 50
 F1 "digitalSensing.sch" 50
-F2 "Vin_1" I R 6400 5300 50 
-F3 "Gnd_in" B R 6400 5800 50 
-F4 "Vin_2" I R 6400 5400 50 
-F5 "Vin_3" I R 6400 5500 50 
-F6 "Vin_4" I R 6400 5600 50 
-F7 "Gnd_out" B L 5550 5800 50 
-F8 "Vcc" I L 5550 5100 50 
-F9 "Vout_1" O L 5550 5300 50 
-F10 "Vout_2" O L 5550 5400 50 
-F11 "Vout_3" O L 5550 5500 50 
-F12 "Vout_4" O L 5550 5600 50 
+F2 "Vin_1" I R 6400 5500 50 
+F3 "Gnd_in" B R 6400 6000 50 
+F4 "Vin_2" I R 6400 5600 50 
+F5 "Vin_3" I R 6400 5700 50 
+F6 "Vin_4" I R 6400 5800 50 
+F7 "Gnd_out" B L 5550 6000 50 
+F8 "Vcc" I L 5550 5300 50 
+F9 "Vout_1" O L 5550 5500 50 
+F10 "Vout_2" O L 5550 5600 50 
+F11 "Vout_3" O L 5550 5700 50 
+F12 "Vout_4" O L 5550 5800 50 
 $EndSheet
 $Sheet
 S 3750 4000 700  1100
@@ -250,13 +250,13 @@ Text Label 4800 3050 2    50   ~ 0
 D_INPUT_C
 Text Label 4800 3150 2    50   ~ 0
 D_INPUT_D
-Text Label 5300 5300 2    50   ~ 0
-D_INPUT_A
-Text Label 5300 5400 2    50   ~ 0
-D_INPUT_B
 Text Label 5300 5500 2    50   ~ 0
-D_INPUT_C
+D_INPUT_A
 Text Label 5300 5600 2    50   ~ 0
+D_INPUT_B
+Text Label 5300 5700 2    50   ~ 0
+D_INPUT_C
+Text Label 5300 5800 2    50   ~ 0
 D_INPUT_D
 Wire Wire Line
 	4800 2850 5000 2850
@@ -267,60 +267,60 @@ Wire Wire Line
 Wire Wire Line
 	5000 3150 4800 3150
 Wire Wire Line
-	5300 5300 5550 5300
-Wire Wire Line
-	5300 5400 5550 5400
-Wire Wire Line
 	5300 5500 5550 5500
 Wire Wire Line
 	5300 5600 5550 5600
-Text Label 5300 5800 2    50   ~ 0
-DGND
+Wire Wire Line
+	5300 5700 5550 5700
 Wire Wire Line
 	5300 5800 5550 5800
-Text Label 5300 5100 2    50   ~ 0
+Text Label 5300 6000 2    50   ~ 0
+DGND
+Wire Wire Line
+	5300 6000 5550 6000
+Text Label 5300 5300 2    50   ~ 0
 3V3
 Wire Wire Line
-	5300 5100 5550 5100
+	5300 5300 5550 5300
 $Comp
 L Connector:Screw_Terminal_01x04 J?
 U 1 1 5BB4878D
-P 6800 5400
-F 0 "J?" H 6880 5392 50  0000 L CNN
-F 1 "Digital_Input_Signals" H 6880 5301 50  0000 L CNN
-F 2 "" H 6800 5400 50  0001 C CNN
-F 3 "~" H 6800 5400 50  0001 C CNN
-	1    6800 5400
+P 6800 5600
+F 0 "J?" H 6880 5592 50  0000 L CNN
+F 1 "Digital_Input_Signals" H 6880 5501 50  0000 L CNN
+F 2 "" H 6800 5600 50  0001 C CNN
+F 3 "~" H 6800 5600 50  0001 C CNN
+	1    6800 5600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6400 5300 6600 5300
-Wire Wire Line
-	6400 5400 6600 5400
 Wire Wire Line
 	6400 5500 6600 5500
 Wire Wire Line
-	6600 5600 6400 5600
+	6400 5600 6600 5600
+Wire Wire Line
+	6400 5700 6600 5700
+Wire Wire Line
+	6600 5800 6400 5800
 $Comp
 L Connector:Screw_Terminal_01x02 J?
 U 1 1 5BB4CAA3
-P 6800 5800
-F 0 "J?" H 6879 5792 50  0000 L CNN
-F 1 "Digital_input_Gnd" H 6879 5701 50  0000 L CNN
-F 2 "" H 6800 5800 50  0001 C CNN
-F 3 "~" H 6800 5800 50  0001 C CNN
-	1    6800 5800
+P 6800 6000
+F 0 "J?" H 6879 5992 50  0000 L CNN
+F 1 "Digital_input_Gnd" H 6879 5901 50  0000 L CNN
+F 2 "" H 6800 6000 50  0001 C CNN
+F 3 "~" H 6800 6000 50  0001 C CNN
+	1    6800 6000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6400 5800 6500 5800
+	6400 6000 6500 6000
 Wire Wire Line
-	6600 5900 6500 5900
+	6600 6100 6500 6100
 Wire Wire Line
-	6500 5900 6500 5800
-Connection ~ 6500 5800
+	6500 6100 6500 6000
+Connection ~ 6500 6000
 Wire Wire Line
-	6500 5800 6600 5800
+	6500 6000 6600 6000
 $Comp
 L Connector:Screw_Terminal_01x02 J?
 U 1 1 5BB4F106
@@ -387,4 +387,33 @@ Wire Wire Line
 	8650 3150 8900 3150
 Wire Wire Line
 	8650 3250 8900 3250
+$Comp
+L Sensor_Temperature:MCP9700T-ETT U?
+U 1 1 5BB39F58
+P 6000 4550
+F 0 "U?" H 5670 4596 50  0000 R CNN
+F 1 "MCP9700T-ETT" H 5670 4505 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6000 4150 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21942e.pdf" H 5850 4800 50  0001 C CNN
+	1    6000 4550
+	1    0    0    -1  
+$EndComp
+Text Label 5950 4950 2    50   ~ 0
+AGND
+Wire Wire Line
+	6000 4850 6000 4950
+Wire Wire Line
+	6000 4950 5950 4950
+Text Label 5900 4200 2    50   ~ 0
+3V3
+Wire Wire Line
+	5900 4200 6000 4200
+Wire Wire Line
+	6000 4200 6000 4250
+Wire Wire Line
+	6400 4550 6750 4550
+Wire Wire Line
+	6750 4550 6750 4800
+Wire Wire Line
+	6750 4800 7550 4800
 $EndSCHEMATC

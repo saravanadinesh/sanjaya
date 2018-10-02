@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 7
 Title "Power Supply"
-Date "2018-10-01"
-Rev "0.5"
+Date "2018-10-02"
+Rev "0.6"
 Comp "Bodhileaf Technologies"
 Comment1 ""
 Comment2 ""
