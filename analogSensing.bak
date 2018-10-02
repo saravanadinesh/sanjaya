@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 7
 Title ""
-Date "2018-09-29"
-Rev "0.3"
+Date "2018-10-01"
+Rev "0.4"
 Comp "Bodhileaf Technologies"
 Comment1 ""
 Comment2 ""
@@ -129,12 +129,6 @@ F 3 "~" H 2200 2750 50  0001 C CNN
 $EndComp
 Text HLabel 2200 3250 3    50   BiDi ~ 0
 Gnd
-Text HLabel 2000 2250 0    50   Input ~ 0
-V_Sense
-Wire Wire Line
-	2000 2250 2200 2250
-Wire Wire Line
-	2200 2250 2200 2350
 Wire Wire Line
 	2200 2900 2200 2850
 Wire Wire Line
@@ -286,4 +280,8 @@ Wire Wire Line
 Connection ~ 4700 4350
 Wire Wire Line
 	4700 4350 4700 4800
+Wire Wire Line
+	2200 1750 4800 1750
+Wire Wire Line
+	2200 1750 2200 2350
 $EndSCHEMATC

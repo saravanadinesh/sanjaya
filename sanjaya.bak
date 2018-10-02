@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 7
 Title "Sanjaya Gateway"
-Date "2018-09-29"
-Rev "0.3"
+Date "2018-10-01"
+Rev "0.4"
 Comp "Bodhileaf Technologies"
 Comment1 ""
 Comment2 ""
@@ -15,37 +15,52 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 1050 1200 1350 750 
+S 2050 1050 1350 750 
 U 5BAA5554
 F0 "powerSupply" 50
 F1 "powerSupply.sch" 50
-F2 "V_adapter_out" I L 1050 1400 50 
-F3 "V_supply_out" O R 2400 1400 50 
-F4 "Gnd_In" B L 1050 1700 50 
-F5 "Gnd_Out" O R 2400 1700 50 
+F2 "V_adapter_out" I L 2050 1250 50 
+F3 "V_supply_out" O R 3400 1250 50 
+F4 "Gnd_In" B L 2050 1550 50 
+F5 "Gnd_Out" O R 3400 1550 50 
 $EndSheet
 $Sheet
-S 3900 1150 2200 1950
+S 4950 1050 1150 1450
 U 5BAA5579
 F0 "rPi" 50
 F1 "rPi.sch" 50
+F2 "5V_In" I L 4950 1250 50 
+F3 "3V3_Out" O R 6100 1250 50 
+F4 "Analog_Gnd" B R 6100 2250 50 
+F5 "Digital_Gnd" B L 4950 2250 50 
+F6 "SDA" B R 6100 1950 50 
+F7 "SCL" B R 6100 2050 50 
+F8 "GPIO_A" I L 4950 1450 50 
+F9 "GPIO_B" I L 4950 1550 50 
+F10 "GPIO_C" I L 4950 1650 50 
+F11 "GPIO_D" I L 4950 1750 50 
+F12 "Relay1_Ctrl" O R 6100 1450 50 
+F13 "Relay2_Ctrl" O R 6100 1650 50 
+F14 "UART_TX" B L 4950 1950 50 
+F15 "UART_RX" B L 4950 2050 50 
+F16 "Fan_Ctrl" O R 6100 1550 50 
 $EndSheet
 $Sheet
-S 7450 1100 1150 850 
+S 7450 1150 1150 850 
 U 5BAA55AD
 F0 "actuation" 50
 F1 "actuation.sch" 50
-F2 "V_Coil" I L 7450 1200 50 
-F3 "Gnd" B L 7450 1800 50 
-F4 "Relay1_Ctrl" I L 7450 1350 50 
-F5 "Fan_Ctrl" I L 7450 1500 50 
+F2 "V_Coil" I L 7450 1250 50 
+F3 "Gnd" B L 7450 1850 50 
+F4 "Relay1_Ctrl" I L 7450 1450 50 
+F5 "Fan_Ctrl" I L 7450 1550 50 
 F6 "Relay2_Ctrl" I L 7450 1650 50 
-F7 "RL1_NO" B R 8600 1400 50 
-F8 "RL1_NC" B R 8600 1200 50 
-F9 "RL1_C" B R 8600 1300 50 
-F10 "RL2_C" B R 8600 1700 50 
-F11 "RL2_NC" B R 8600 1600 50 
-F12 "RL2_NO" B R 8600 1800 50 
+F7 "RL1_NO" B R 8600 1450 50 
+F8 "RL1_NC" B R 8600 1250 50 
+F9 "RL1_C" B R 8600 1350 50 
+F10 "RL2_C" B R 8600 1750 50 
+F11 "RL2_NC" B R 8600 1650 50 
+F12 "RL2_NO" B R 8600 1850 50 
 $EndSheet
 $Sheet
 S 7500 2350 1050 1500
@@ -54,15 +69,14 @@ F0 "analogSensing" 50
 F1 "analogSensing.sch" 50
 F2 "Vcc" I L 7500 2500 50 
 F3 "Gnd" I L 7500 3650 50 
-F4 "SCL" B L 7500 2650 50 
+F4 "SCL" B L 7500 2900 50 
 F5 "SDA" B L 7500 2800 50 
-F6 "V_Sense" I R 8550 2500 50 
-F7 "I_Sense+" I R 8550 2700 50 
-F8 "I_Sense-" I R 8550 2850 50 
-F9 "R_Sense" I R 8550 3100 50 
-F10 "T_Sense" I R 8550 3250 50 
-F11 "420+" I R 8550 3500 50 
-F12 "420-" I R 8550 3650 50 
+F6 "I_Sense+" I L 7500 3100 50 
+F7 "I_Sense-" I L 7500 3200 50 
+F8 "R_Sense" I R 8550 3100 50 
+F9 "T_Sense" I R 8550 3250 50 
+F10 "420+" I R 8550 3500 50 
+F11 "420-" I R 8550 3650 50 
 $EndSheet
 $Sheet
 S 6500 4550 850  1150
@@ -95,4 +109,121 @@ F7 "RS485_B-" B R 5150 4800 50
 F8 "RS232_TX" O R 5150 4350 50 
 F9 "RS232_RX" I R 5150 4500 50 
 $EndSheet
+Text Label 4800 2250 2    50   ~ 0
+DGND
+Text Label 6250 2250 0    50   ~ 0
+AGND
+Text Label 3550 1550 0    50   ~ 0
+DGND
+Wire Wire Line
+	3400 1550 3550 1550
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5BB30914
+P 1500 1250
+F 0 "J?" H 1420 1467 50  0000 C CNN
+F 1 "PWR_SUPPLY" H 1420 1376 50  0000 C CNN
+F 2 "" H 1500 1250 50  0001 C CNN
+F 3 "~" H 1500 1250 50  0001 C CNN
+	1    1500 1250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 1250 2050 1250
+Wire Wire Line
+	1700 1350 1900 1350
+Wire Wire Line
+	1900 1350 1900 1550
+Wire Wire Line
+	1900 1550 2050 1550
+Wire Wire Line
+	6100 2250 6250 2250
+Wire Wire Line
+	4800 2250 4950 2250
+Text Label 7300 1850 2    50   ~ 0
+DGND
+Wire Wire Line
+	7300 1850 7450 1850
+Wire Wire Line
+	6100 1450 7450 1450
+Wire Wire Line
+	6100 1550 7450 1550
+Wire Wire Line
+	6100 1650 7450 1650
+Text Label 6650 1250 0    50   ~ 0
+3V3
+Text Label 7350 2500 2    50   ~ 0
+3V3
+Wire Wire Line
+	7350 2500 7500 2500
+Text Label 7350 3650 2    50   ~ 0
+AGND
+Wire Wire Line
+	7500 3650 7350 3650
+Wire Wire Line
+	6100 1950 7050 1950
+Wire Wire Line
+	7050 1950 7050 2800
+Wire Wire Line
+	7050 2800 7500 2800
+Wire Wire Line
+	7500 2900 6950 2900
+Wire Wire Line
+	6950 2900 6950 2050
+Wire Wire Line
+	6950 2050 6100 2050
+$Comp
+L Device:R_Small R?
+U 1 1 5BB3649F
+P 6400 1250
+F 0 "R?" V 6204 1250 50  0000 C CNN
+F 1 "20m" V 6295 1250 50  0000 C CNN
+F 2 "" H 6400 1250 50  0001 C CNN
+F 3 "~" H 6400 1250 50  0001 C CNN
+	1    6400 1250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6100 1250 6250 1250
+Text Label 6650 950  0    50   ~ 0
+I_Sense-
+Text Label 6650 850  0    50   ~ 0
+I_Sense+
+Wire Wire Line
+	6250 1250 6250 850 
+Connection ~ 6250 1250
+Wire Wire Line
+	6250 1250 6300 1250
+Wire Wire Line
+	6500 1250 6550 1250
+Wire Wire Line
+	6650 950  6550 950 
+Wire Wire Line
+	6550 950  6550 1250
+Connection ~ 6550 1250
+Wire Wire Line
+	6250 850  6650 850 
+Wire Wire Line
+	6550 1250 6650 1250
+Wire Wire Line
+	7450 1250 7300 1250
+Wire Wire Line
+	7300 1250 7300 600 
+Wire Wire Line
+	7300 600  4200 600 
+Wire Wire Line
+	4200 600  4200 1250
+Connection ~ 4200 1250
+Wire Wire Line
+	4200 1250 4950 1250
+Wire Wire Line
+	3400 1250 4200 1250
+Text Label 7350 3100 2    50   ~ 0
+I_Sense+
+Text Label 7350 3200 2    50   ~ 0
+I_Sense-
+Wire Wire Line
+	7350 3100 7500 3100
+Wire Wire Line
+	7350 3200 7500 3200
 $EndSCHEMATC

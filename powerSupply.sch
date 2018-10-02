@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 2 7
 Title "Power Supply"
 Date "2018-10-01"
-Rev "0.4"
+Rev "0.5"
 Comp "Bodhileaf Technologies"
 Comment1 ""
 Comment2 ""
