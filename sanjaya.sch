@@ -105,9 +105,9 @@ F3 "UART_TX" I T 4050 4000 50
 F4 "GND" B T 4300 4000 50 
 F5 "UART_RX" O T 4150 4000 50 
 F6 "RS485_A+" B B 4150 5100 50 
-F7 "RS485_B-" B B 4300 5100 50 
-F8 "RS232_TX" O B 3850 5100 50 
-F9 "RS232_RX" I B 4000 5100 50 
+F7 "RS485_B-" B B 4250 5100 50 
+F8 "RS232_TX" O B 3950 5100 50 
+F9 "RS232_RX" I B 4050 5100 50 
 $EndSheet
 Text Label 4850 3650 2    50   ~ 0
 DGND
@@ -118,12 +118,12 @@ DGND
 Wire Wire Line
 	3450 2950 3600 2950
 $Comp
-L Connector:Screw_Terminal_01x02 J?
+L Connector:Screw_Terminal_01x02 J1
 U 1 1 5BB30914
 P 1550 2650
-F 0 "J?" H 1470 2867 50  0000 C CNN
+F 0 "J1" H 1470 2867 50  0000 C CNN
 F 1 "PWR_SUPPLY" H 1470 2776 50  0000 C CNN
-F 2 "" H 1550 2650 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 1550 2650 50  0001 C CNN
 F 3 "~" H 1550 2650 50  0001 C CNN
 	1    1550 2650
 	-1   0    0    -1  
@@ -173,12 +173,12 @@ Wire Wire Line
 Wire Wire Line
 	7000 3450 6150 3450
 $Comp
-L Device:R_Small R?
+L Device:R_Small R1
 U 1 1 5BB3649F
 P 6450 2650
-F 0 "R?" V 6254 2650 50  0000 C CNN
+F 0 "R1" V 6254 2650 50  0000 C CNN
 F 1 "20m" V 6345 2650 50  0000 C CNN
-F 2 "" H 6450 2650 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 6450 2650 50  0001 C CNN
 F 3 "~" H 6450 2650 50  0001 C CNN
 	1    6450 2650
 	0    1    1    0   
@@ -283,12 +283,12 @@ Text Label 5300 5300 2    50   ~ 0
 Wire Wire Line
 	5300 5300 5550 5300
 $Comp
-L Connector:Screw_Terminal_01x04 J?
+L Connector:Screw_Terminal_01x04 J2
 U 1 1 5BB4878D
 P 6800 5600
-F 0 "J?" H 6880 5592 50  0000 L CNN
+F 0 "J2" H 6880 5592 50  0000 L CNN
 F 1 "Digital_Input_Signals" H 6880 5501 50  0000 L CNN
-F 2 "" H 6800 5600 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4-5.08_1x04_P5.08mm_Horizontal" H 6800 5600 50  0001 C CNN
 F 3 "~" H 6800 5600 50  0001 C CNN
 	1    6800 5600
 	1    0    0    -1  
@@ -302,12 +302,12 @@ Wire Wire Line
 Wire Wire Line
 	6600 5800 6400 5800
 $Comp
-L Connector:Screw_Terminal_01x02 J?
+L Connector:Screw_Terminal_01x02 J3
 U 1 1 5BB4CAA3
 P 6800 6000
-F 0 "J?" H 6879 5992 50  0000 L CNN
-F 1 "Digital_input_Gnd" H 6879 5901 50  0000 L CNN
-F 2 "" H 6800 6000 50  0001 C CNN
+F 0 "J3" H 6879 5992 50  0000 L CNN
+F 1 "Digital_Gnd" H 6879 5901 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 6800 6000 50  0001 C CNN
 F 3 "~" H 6800 6000 50  0001 C CNN
 	1    6800 6000
 	1    0    0    -1  
@@ -322,23 +322,23 @@ Connection ~ 6500 6000
 Wire Wire Line
 	6500 6000 6600 6000
 $Comp
-L Connector:Screw_Terminal_01x02 J?
+L Connector:Screw_Terminal_01x02 J6
 U 1 1 5BB4F106
 P 9100 4500
-F 0 "J?" H 9180 4492 50  0000 L CNN
+F 0 "J6" H 9180 4492 50  0000 L CNN
 F 1 "Screw_Terminal_01x02" H 9180 4401 50  0000 L CNN
-F 2 "" H 9100 4500 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 9100 4500 50  0001 C CNN
 F 3 "~" H 9100 4500 50  0001 C CNN
 	1    9100 4500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x02 J?
+L Connector:Screw_Terminal_01x02 J7
 U 1 1 5BB4F136
 P 9100 4950
-F 0 "J?" H 9180 4942 50  0000 L CNN
+F 0 "J7" H 9180 4942 50  0000 L CNN
 F 1 "Screw_Terminal_01x02" H 9180 4851 50  0000 L CNN
-F 2 "" H 9100 4950 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 9100 4950 50  0001 C CNN
 F 3 "~" H 9100 4950 50  0001 C CNN
 	1    9100 4950
 	1    0    0    -1  
@@ -354,23 +354,23 @@ AGND
 Wire Wire Line
 	8900 4600 8850 4600
 $Comp
-L Connector:Screw_Terminal_01x03 J?
+L Connector:Screw_Terminal_01x03 J4
 U 1 1 5BB5477C
 P 9100 2750
-F 0 "J?" H 9180 2792 50  0000 L CNN
+F 0 "J4" H 9180 2792 50  0000 L CNN
 F 1 "Screw_Terminal_01x03" H 9180 2701 50  0000 L CNN
-F 2 "" H 9100 2750 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal" H 9100 2750 50  0001 C CNN
 F 3 "~" H 9100 2750 50  0001 C CNN
 	1    9100 2750
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x03 J?
+L Connector:Screw_Terminal_01x03 J5
 U 1 1 5BB5488B
 P 9100 3150
-F 0 "J?" H 9180 3192 50  0000 L CNN
+F 0 "J5" H 9180 3192 50  0000 L CNN
 F 1 "Screw_Terminal_01x03" H 9180 3101 50  0000 L CNN
-F 2 "" H 9100 3150 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal" H 9100 3150 50  0001 C CNN
 F 3 "~" H 9100 3150 50  0001 C CNN
 	1    9100 3150
 	1    0    0    -1  
@@ -388,10 +388,10 @@ Wire Wire Line
 Wire Wire Line
 	8650 3250 8900 3250
 $Comp
-L Sensor_Temperature:MCP9700T-ETT U?
+L Sensor_Temperature:MCP9700T-ETT U2
 U 1 1 5BB39F58
 P 6000 4550
-F 0 "U?" H 5670 4596 50  0000 R CNN
+F 0 "U2" H 5670 4596 50  0000 R CNN
 F 1 "MCP9700T-ETT" H 5670 4505 50  0000 R CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 6000 4150 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21942e.pdf" H 5850 4800 50  0001 C CNN
@@ -416,4 +416,23 @@ Wire Wire Line
 	6750 4550 6750 4800
 Wire Wire Line
 	6750 4800 7550 4800
+$Comp
+L Connector:Screw_Terminal_01x04 J15
+U 1 1 5BB5228E
+P 4150 5450
+F 0 "J15" H 4230 5442 50  0000 L CNN
+F 1 "Serial" H 4230 5351 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4-5.08_1x04_P5.08mm_Horizontal" H 4150 5450 50  0001 C CNN
+F 3 "~" H 4150 5450 50  0001 C CNN
+	1    4150 5450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3950 5100 3950 5250
+Wire Wire Line
+	4050 5100 4050 5250
+Wire Wire Line
+	4150 5100 4150 5250
+Wire Wire Line
+	4250 5100 4250 5250
 $EndSCHEMATC

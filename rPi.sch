@@ -15,12 +15,12 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:Raspberry_Pi_2_3 J?
+L Connector:Raspberry_Pi_2_3 J13
 U 1 1 5BB24306
 P 5500 3100
-F 0 "J?" H 5050 4400 50  0000 C CNN
+F 0 "J13" H 5050 4400 50  0000 C CNN
 F 1 "Raspberry_Pi_2_3" H 6100 4400 50  0000 C CNN
-F 2 "" H 5500 3100 50  0001 C CNN
+F 2 "Connector_IDC:IDC-Header_2x20_P2.54mm_Vertical" H 5500 3100 50  0001 C CNN
 F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 5500 3100 50  0001 C CNN
 	1    5500 3100
 	1    0    0    -1  
