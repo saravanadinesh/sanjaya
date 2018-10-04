@@ -134,9 +134,9 @@ Text HLabel 6650 3000 2    50   Output ~ 0
 Relay2_Ctrl
 Wire Wire Line
 	6300 3000 6650 3000
-Text HLabel 4450 2200 0    50   BiDi ~ 0
+Text HLabel 4450 2200 0    50   Output ~ 0
 UART_TX
-Text HLabel 4450 2300 0    50   BiDi ~ 0
+Text HLabel 4450 2300 0    50   Input ~ 0
 UART_RX
 Wire Wire Line
 	4450 2300 4700 2300
