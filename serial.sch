@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 7
 Title ""
-Date "2018-10-02"
-Rev "0.6"
+Date "2018-10-05"
+Rev "0.7"
 Comp "Bodhileaf Technologies"
 Comment1 ""
 Comment2 ""
@@ -519,4 +519,9 @@ F 3 "http://www.mouser.com/ds/2/149/1N4148WT-461550.pdf" H 5200 4750 50  0001 C 
 	1    5200 4750
 	0    1    1    0   
 $EndComp
+Text HLabel 7900 4900 2    50   Output ~ 0
+DGND
+Wire Wire Line
+	7650 4900 7900 4900
+Connection ~ 7650 4900
 $EndSCHEMATC

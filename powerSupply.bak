@@ -209,7 +209,7 @@ F 3 "~" H 8900 2200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	8400 2450 8600 2450
+	8400 2450 8550 2450
 Wire Wire Line
 	8600 2450 8600 2200
 Wire Wire Line
@@ -244,7 +244,7 @@ L Connector:Conn_01x02_Male J10
 U 1 1 5BAE59DD
 P 7550 3800
 F 0 "J10" V 7703 3612 50  0000 R CNN
-F 1 "Battery_Backup_Bypass" V 7612 3612 50  0000 R CNN
+F 1 "Bat_Bak_Byp_Gnd" V 7612 3612 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 7550 3800 50  0001 C CNN
 F 3 "~" H 7550 3800 50  0001 C CNN
 	1    7550 3800
@@ -268,4 +268,25 @@ F 3 "~" H 7250 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 7400 2850
+$Comp
+L Connector:Conn_01x02_Male J18
+U 1 1 5BB845D3
+P 7800 1600
+F 0 "J18" V 7860 1640 50  0000 L CNN
+F 1 "Bat_Bak_Byp_Vcc" V 7951 1640 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7800 1600 50  0001 C CNN
+F 3 "~" H 7800 1600 50  0001 C CNN
+	1    7800 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7500 1800 7700 1800
+Connection ~ 7500 1800
+Wire Wire Line
+	7800 1800 8550 1800
+Wire Wire Line
+	8550 1800 8550 2450
+Connection ~ 8550 2450
+Wire Wire Line
+	8550 2450 8600 2450
 $EndSCHEMATC

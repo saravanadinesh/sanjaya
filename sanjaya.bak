@@ -104,10 +104,11 @@ F2 "VCC" I T 3850 4000 50
 F3 "UART_TX" I T 4000 4000 50 
 F4 "GND" B T 4300 4000 50 
 F5 "UART_RX" O T 4150 4000 50 
-F6 "RS485_A+" B B 4150 5100 50 
-F7 "RS485_B-" B B 4250 5100 50 
-F8 "RS232_TX" O B 3950 5100 50 
-F9 "RS232_RX" I B 4050 5100 50 
+F6 "RS485_A+" B B 4250 5100 50 
+F7 "RS485_B-" B B 4150 5100 50 
+F8 "RS232_TX" O B 3850 5100 50 
+F9 "RS232_RX" I B 3950 5100 50 
+F10 "DGND" O B 4050 5100 50 
 $EndSheet
 Text Label 4850 3650 2    50   ~ 0
 DGND
@@ -186,9 +187,9 @@ $EndComp
 Wire Wire Line
 	6150 2650 6300 2650
 Text Label 6700 2350 0    50   ~ 0
-I_Sense-
+3V3_Net-
 Text Label 6700 2250 0    50   ~ 0
-I_Sense+
+3V3_Net+
 Wire Wire Line
 	6300 2650 6300 2250
 Connection ~ 6300 2650
@@ -219,9 +220,9 @@ Wire Wire Line
 Wire Wire Line
 	3450 2650 4250 2650
 Text Label 7400 4500 2    50   ~ 0
-I_Sense+
+3V3_Net+
 Text Label 7400 4600 2    50   ~ 0
-I_Sense-
+3V3_Net-
 Wire Wire Line
 	7400 4500 7550 4500
 Wire Wire Line
@@ -298,7 +299,7 @@ L Connector:Screw_Terminal_01x02 J3
 U 1 1 5BB4CAA3
 P 6800 6000
 F 0 "J3" H 6879 5992 50  0000 L CNN
-F 1 "Digital_Gnd" H 6879 5901 50  0000 L CNN
+F 1 "Digital_Input_Gnd" H 6879 5901 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 6800 6000 50  0001 C CNN
 F 3 "~" H 6800 6000 50  0001 C CNN
 	1    6800 6000
@@ -318,7 +319,7 @@ L Connector:Screw_Terminal_01x02 J6
 U 1 1 5BB4F106
 P 9100 4500
 F 0 "J6" H 9180 4492 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 9180 4401 50  0000 L CNN
+F 1 "Analog_RSense" H 9180 4401 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 9100 4500 50  0001 C CNN
 F 3 "~" H 9100 4500 50  0001 C CNN
 	1    9100 4500
@@ -329,7 +330,7 @@ L Connector:Screw_Terminal_01x02 J7
 U 1 1 5BB4F136
 P 9100 4950
 F 0 "J7" H 9180 4942 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 9180 4851 50  0000 L CNN
+F 1 "Analog_420" H 9180 4851 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 9100 4950 50  0001 C CNN
 F 3 "~" H 9100 4950 50  0001 C CNN
 	1    9100 4950
@@ -354,7 +355,7 @@ F 1 "Screw_Terminal_01x03" H 9180 2701 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal" H 9100 2750 50  0001 C CNN
 F 3 "~" H 9100 2750 50  0001 C CNN
 	1    9100 2750
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector:Screw_Terminal_01x03 J5
@@ -365,7 +366,7 @@ F 1 "Screw_Terminal_01x03" H 9180 3101 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal" H 9100 3150 50  0001 C CNN
 F 3 "~" H 9100 3150 50  0001 C CNN
 	1    9100 3150
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	8650 2650 8900 2650
@@ -408,17 +409,6 @@ Wire Wire Line
 	6750 4550 6750 4800
 Wire Wire Line
 	6750 4800 7550 4800
-$Comp
-L Connector:Screw_Terminal_01x04 J15
-U 1 1 5BB5228E
-P 4150 5450
-F 0 "J15" H 4230 5442 50  0000 L CNN
-F 1 "Serial" H 4230 5351 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4-5.08_1x04_P5.08mm_Horizontal" H 4150 5450 50  0001 C CNN
-F 3 "~" H 4150 5450 50  0001 C CNN
-	1    4150 5450
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3950 5100 3950 5250
 Wire Wire Line
@@ -435,4 +425,45 @@ Wire Wire Line
 	4150 4000 4150 3450
 Wire Wire Line
 	4150 3450 5000 3450
+$Comp
+L Connector:Screw_Terminal_01x03 J16
+U 1 1 5BB7BA6A
+P 4150 5450
+F 0 "J16" V 4023 5630 50  0000 L CNN
+F 1 "RS485" V 4114 5630 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal" H 4150 5450 50  0001 C CNN
+F 3 "~" H 4150 5450 50  0001 C CNN
+	1    4150 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J15
+U 1 1 5BB7BBDA
+P 3950 5450
+F 0 "J15" V 3800 5200 50  0000 L CNN
+F 1 "RS232" V 3900 5050 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 3950 5450 50  0001 C CNN
+F 3 "~" H 3950 5450 50  0001 C CNN
+	1    3950 5450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 5250 3850 5100
+$Comp
+L Connector:Conn_01x02_Male J17
+U 1 1 5BB7EB2C
+P 6600 4200
+F 0 "J17" H 6706 4378 50  0000 C CNN
+F 1 "I2C" H 6706 4287 50  0000 C CNN
+F 2 "Connector_JST:JST_EH_B02B-EH-A_1x02_P2.50mm_Vertical" H 6600 4200 50  0001 C CNN
+F 3 "~" H 6600 4200 50  0001 C CNN
+	1    6600 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 4200 7100 4200
+Connection ~ 7100 4200
+Wire Wire Line
+	6800 4300 7000 4300
+Connection ~ 7000 4300
 $EndSCHEMATC
