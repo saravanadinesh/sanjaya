@@ -116,28 +116,13 @@ F 3 "~" H 2200 2750 50  0001 C CNN
 	1    2200 2750
 	1    0    0    -1  
 $EndComp
-Text HLabel 2200 3250 3    50   BiDi ~ 0
+Text HLabel 2200 3050 3    50   BiDi ~ 0
 Gnd
-Wire Wire Line
-	2200 2900 2200 2850
 Wire Wire Line
 	2200 2650 2200 2600
 Connection ~ 2200 2600
 Wire Wire Line
 	2200 2600 2200 2550
-$Comp
-L Device:R_Small R5
-U 1 1 5BB21FC0
-P 2200 3000
-F 0 "R5" H 2259 3046 50  0000 L CNN
-F 1 "10K" H 2259 2955 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 2200 3000 50  0001 C CNN
-F 3 "~" H 2200 3000 50  0001 C CNN
-	1    2200 3000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2200 3100 2200 3250
 Text HLabel 2050 3600 0    50   Input ~ 0
 I_Sense+
 Text HLabel 2050 3750 0    50   Input ~ 0
@@ -285,4 +270,6 @@ Wire Wire Line
 Connection ~ 3750 3500
 Wire Wire Line
 	3850 3800 3850 4350
+Wire Wire Line
+	2200 2850 2200 3050
 $EndSCHEMATC
