@@ -69,9 +69,9 @@ F 3 "~" H 3700 3300 50  0001 C CNN
 	1    3700 3300
 	0    1    1    0   
 $EndComp
-Text HLabel 3300 3300 0    50   Input ~ 0
+Text HLabel 2700 3300 0    50   Input ~ 0
 Vin_1
-Text HLabel 3300 3500 0    50   BiDi ~ 0
+Text HLabel 2700 3500 0    50   BiDi ~ 0
 Gnd_in
 $Comp
 L Device:R_Small R9
@@ -84,9 +84,9 @@ F 3 "~" H 3700 3900 50  0001 C CNN
 	1    3700 3900
 	0    1    1    0   
 $EndComp
-Text HLabel 3300 3900 0    50   Input ~ 0
+Text HLabel 2700 3900 0    50   Input ~ 0
 Vin_2
-Text HLabel 3300 4100 0    50   BiDi ~ 0
+Text HLabel 2700 4100 0    50   BiDi ~ 0
 Gnd_in
 $Comp
 L Device:R_Small R10
@@ -99,9 +99,9 @@ F 3 "~" H 3700 4500 50  0001 C CNN
 	1    3700 4500
 	0    1    1    0   
 $EndComp
-Text HLabel 3300 4500 0    50   Input ~ 0
+Text HLabel 2700 4500 0    50   Input ~ 0
 Vin_3
-Text HLabel 3300 4700 0    50   BiDi ~ 0
+Text HLabel 2700 4700 0    50   BiDi ~ 0
 Gnd_in
 $Comp
 L Device:R_Small R11
@@ -114,32 +114,16 @@ F 3 "~" H 3700 5100 50  0001 C CNN
 	1    3700 5100
 	0    1    1    0   
 $EndComp
-Text HLabel 3300 5100 0    50   Input ~ 0
+Text HLabel 2700 5100 0    50   Input ~ 0
 Vin_4
-Text HLabel 3300 5300 0    50   BiDi ~ 0
+Text HLabel 2700 5300 0    50   BiDi ~ 0
 Gnd_in
-Wire Wire Line
-	3300 3300 3600 3300
 Wire Wire Line
 	3800 3300 3900 3300
 Wire Wire Line
-	3300 3500 3900 3500
-Wire Wire Line
 	3800 3900 3900 3900
 Wire Wire Line
-	3300 3900 3600 3900
-Wire Wire Line
-	3300 4100 3900 4100
-Wire Wire Line
-	3300 4500 3600 4500
-Wire Wire Line
-	3300 4700 3900 4700
-Wire Wire Line
 	3800 4500 3900 4500
-Wire Wire Line
-	3300 5100 3600 5100
-Wire Wire Line
-	3300 5300 3900 5300
 Wire Wire Line
 	3800 5100 3900 5100
 $Comp
@@ -342,4 +326,72 @@ Wire Wire Line
 	6250 4500 6450 4500
 Wire Wire Line
 	6250 5100 6450 5100
+$Comp
+L Device:Polyfuse_Small F6
+U 1 1 5BC05A3A
+P 3000 3300
+F 0 "F6" V 2795 3300 50  0000 C CNN
+F 1 "PPTC_50mA" V 2886 3300 50  0000 C CNN
+F 2 "Fuse:Fuse_1210_3225Metric" H 3050 3100 50  0001 L CNN
+F 3 "~" H 3000 3300 50  0001 C CNN
+	1    3000 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Polyfuse_Small F7
+U 1 1 5BC078FC
+P 3000 3900
+F 0 "F7" V 2795 3900 50  0000 C CNN
+F 1 "PPTC_50mA" V 2886 3900 50  0000 C CNN
+F 2 "Fuse:Fuse_1210_3225Metric" H 3050 3700 50  0001 L CNN
+F 3 "~" H 3000 3900 50  0001 C CNN
+	1    3000 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Polyfuse_Small F8
+U 1 1 5BC0794A
+P 3000 4500
+F 0 "F8" V 2795 4500 50  0000 C CNN
+F 1 "PPTC_50mA" V 2886 4500 50  0000 C CNN
+F 2 "Fuse:Fuse_1210_3225Metric" H 3050 4300 50  0001 L CNN
+F 3 "~" H 3000 4500 50  0001 C CNN
+	1    3000 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Polyfuse_Small F9
+U 1 1 5BC07996
+P 3000 5100
+F 0 "F9" V 2795 5100 50  0000 C CNN
+F 1 "PPTC_50mA" V 2886 5100 50  0000 C CNN
+F 2 "Fuse:Fuse_1210_3225Metric" H 3050 4900 50  0001 L CNN
+F 3 "~" H 3000 5100 50  0001 C CNN
+	1    3000 5100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2700 3500 3900 3500
+Wire Wire Line
+	2700 3300 2900 3300
+Wire Wire Line
+	3100 3300 3600 3300
+Wire Wire Line
+	3100 3900 3600 3900
+Wire Wire Line
+	2700 3900 2900 3900
+Wire Wire Line
+	2700 4100 3900 4100
+Wire Wire Line
+	2700 4500 2900 4500
+Wire Wire Line
+	2700 4700 3900 4700
+Wire Wire Line
+	3100 4500 3600 4500
+Wire Wire Line
+	2700 5100 2900 5100
+Wire Wire Line
+	3100 5100 3600 5100
+Wire Wire Line
+	2700 5300 3900 5300
 $EndSCHEMATC
