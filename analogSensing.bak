@@ -20,7 +20,7 @@ U 1 1 5BB12D76
 P 4800 2900
 F 0 "U5" H 4550 3350 50  0000 C CNN
 F 1 "MCP3428" H 5050 3350 50  0000 C CNN
-F 2 "Package_SO:SOIC-14W_7.5x9.0mm_P1.27mm" H 4800 2900 50  0001 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4800 2900 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22226a.pdf" H 4800 2900 50  0001 C CNN
 	1    4800 2900
 	1    0    0    -1  

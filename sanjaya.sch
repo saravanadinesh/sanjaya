@@ -124,7 +124,7 @@ U 1 1 5BB30914
 P 1550 2650
 F 0 "J1" H 1470 2867 50  0000 C CNN
 F 1 "PWR_SUPPLY" H 1470 2776 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 1550 2650 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 1550 2650 50  0001 C CNN
 F 3 "~" H 1550 2650 50  0001 C CNN
 	1    1550 2650
 	-1   0    0    -1  
@@ -281,7 +281,7 @@ U 1 1 5BB4878D
 P 6800 5600
 F 0 "J2" H 6880 5592 50  0000 L CNN
 F 1 "Digital_Input_Signals" H 6880 5501 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4-5.08_1x04_P5.08mm_Horizontal" H 6800 5600 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-4-2.54_1x04_P2.54mm_Horizontal" H 6800 5600 50  0001 C CNN
 F 3 "~" H 6800 5600 50  0001 C CNN
 	1    6800 5600
 	1    0    0    -1  
@@ -300,7 +300,7 @@ U 1 1 5BB4CAA3
 P 6800 6000
 F 0 "J3" H 6879 5992 50  0000 L CNN
 F 1 "Digital_Input_Gnd" H 6879 5901 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 6800 6000 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 6800 6000 50  0001 C CNN
 F 3 "~" H 6800 6000 50  0001 C CNN
 	1    6800 6000
 	1    0    0    -1  
@@ -320,7 +320,7 @@ U 1 1 5BB4F106
 P 9100 4500
 F 0 "J6" H 9180 4492 50  0000 L CNN
 F 1 "Analog_RSense" H 9180 4401 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 9100 4500 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 9100 4500 50  0001 C CNN
 F 3 "~" H 9100 4500 50  0001 C CNN
 	1    9100 4500
 	1    0    0    -1  
@@ -331,7 +331,7 @@ U 1 1 5BB4F136
 P 9100 4950
 F 0 "J7" H 9180 4942 50  0000 L CNN
 F 1 "Analog_420" H 9180 4851 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 9100 4950 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 9100 4950 50  0001 C CNN
 F 3 "~" H 9100 4950 50  0001 C CNN
 	1    9100 4950
 	1    0    0    -1  
@@ -352,7 +352,7 @@ U 1 1 5BB5477C
 P 9100 2750
 F 0 "J4" H 9180 2792 50  0000 L CNN
 F 1 "Screw_Terminal_01x03" H 9180 2701 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal" H 9100 2750 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-3-2.54_1x03_P2.54mm_Horizontal" H 9100 2750 50  0001 C CNN
 F 3 "~" H 9100 2750 50  0001 C CNN
 	1    9100 2750
 	1    0    0    1   
@@ -363,7 +363,7 @@ U 1 1 5BB5488B
 P 9100 3150
 F 0 "J5" H 9180 3192 50  0000 L CNN
 F 1 "Screw_Terminal_01x03" H 9180 3101 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal" H 9100 3150 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-3-2.54_1x03_P2.54mm_Horizontal" H 9100 3150 50  0001 C CNN
 F 3 "~" H 9100 3150 50  0001 C CNN
 	1    9100 3150
 	1    0    0    1   
@@ -431,7 +431,7 @@ U 1 1 5BB7BA6A
 P 4150 5450
 F 0 "J16" V 4023 5630 50  0000 L CNN
 F 1 "RS485" V 4114 5630 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal" H 4150 5450 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-3-2.54_1x03_P2.54mm_Horizontal" H 4150 5450 50  0001 C CNN
 F 3 "~" H 4150 5450 50  0001 C CNN
 	1    4150 5450
 	0    1    1    0   
@@ -442,7 +442,7 @@ U 1 1 5BB7BBDA
 P 3950 5450
 F 0 "J15" V 3800 5200 50  0000 L CNN
 F 1 "RS232" V 3900 5050 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 3950 5450 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 3950 5450 50  0001 C CNN
 F 3 "~" H 3950 5450 50  0001 C CNN
 	1    3950 5450
 	0    1    1    0   

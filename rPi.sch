@@ -110,14 +110,12 @@ Wire Wire Line
 Wire Wire Line
 	4450 3600 4700 3600
 NoConn ~ 4700 3700
-NoConn ~ 4700 3800
 NoConn ~ 4700 2900
 NoConn ~ 4700 3000
 NoConn ~ 4700 3100
 NoConn ~ 4700 2500
 NoConn ~ 4700 2600
 NoConn ~ 4700 2700
-NoConn ~ 6300 2200
 NoConn ~ 6300 2300
 NoConn ~ 6300 3200
 NoConn ~ 6300 3300
@@ -142,8 +140,10 @@ Wire Wire Line
 	4450 2300 4700 2300
 Wire Wire Line
 	4450 2200 4700 2200
-Text HLabel 6650 2800 2    50   Output ~ 0
+Text HLabel 6650 2200 2    50   Output ~ 0
 Fan_Ctrl
+NoConn ~ 6300 2800
 Wire Wire Line
-	6300 2800 6650 2800
+	6650 2200 6300 2200
+NoConn ~ 4700 3800
 $EndSCHEMATC
