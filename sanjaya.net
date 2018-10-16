@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/saravanadinesh/kicad/sanjaya/sanjaya.sch)
-    (date "Mon Oct 15 20:49:31 2018")
+    (date "Tue Oct 16 11:03:50 2018")
     (tool "Eeschema 5.0.0-fee4fd1~66~ubuntu16.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -228,7 +228,7 @@
       (sheetpath (names /powerSupply/) (tstamps /5BAA5554/))
       (tstamp 5BAB3A2A))
     (comp (ref J11)
-      (value USB_B_Micro_OUT)
+      (value Board_PwrIn)
       (footprint Connector_USB:USB_Micro-B)
       (datasheet ~)
       (libsource (lib Connector) (part USB_B_Micro) (description "USB Micro Type B connector"))
@@ -256,7 +256,7 @@
       (sheetpath (names /powerSupply/) (tstamps /5BAA5554/))
       (tstamp 5BAE59DD))
     (comp (ref J9)
-      (value USB_B_Micro_IN)
+      (value To_PwrBank)
       (footprint Connector_USB:USB_Micro-B)
       (datasheet ~)
       (libsource (lib Connector) (part USB_B_Micro) (description "USB Micro Type B connector"))
