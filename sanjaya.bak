@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 7
 Title "Sanjaya Gateway"
-Date "2018-10-05"
-Rev "0.7"
+Date "2018-10-17"
+Rev "0.9"
 Comp "Bodhileaf Technologies"
 Comment1 ""
 Comment2 ""
